@@ -1,13 +1,21 @@
 
 function App() {
-  return ( < div className = "container" >
+  const name = "Brad";
+  const x = true;
 
-  <div className="test"></div>
+  return ( <div className = "container" >
+
+    <div className="test"> 
+      
+      <h1> Ruchi </h1>
+
+      <h2> Hello {name}  </h2>
+      x = {x ? 'Yes' : 'No'}
+
+    </div>  
   
 
-
-    </div>
-  );
+  </div>);
 }
 
 export default App;
