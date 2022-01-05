@@ -1,3 +1,4 @@
+import Header from './compnents/Header';
 
 function App() {
   const name = "Brad";
@@ -5,12 +6,10 @@ function App() {
 
   return ( <div className = "container" >
 
-    <div className="test"> 
+    <div className="test">      
+     
+      <Header />
       
-      <h1> Ruchi </h1>
-
-      <h2> Hello {name}  </h2>
-      x = {x ? 'Yes' : 'No'}
 
     </div>  
   
