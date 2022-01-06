@@ -4,17 +4,12 @@ function App() {
   const name = "Brad";
   const x = true;
 
-  return ( <div className = "container" >
+  return ( 
+    <div className = "container" >
 
-    <div className="test">      
-     
-      <Header />
-      
+      <Header title='Hello'/>
 
-    </div>  
-  
+    </div>);
+  }
 
-  </div>);
-}
-
-export default App;
+  export default App;

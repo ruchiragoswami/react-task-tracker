@@ -1,8 +1,15 @@
 // import React from 'react'
 
-const Header = () => {
+const Header = (props) => {
     return (
-        <h1> Task Tracker </h1>
+        <div> 
+            <h1> Task Tracker </h1>
+
+            <h2> This is {props.title} </h2>
+
+        </div>
+       
+
     )
 }
 
