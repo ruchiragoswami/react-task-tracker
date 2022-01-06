@@ -1,16 +1,39 @@
+import { useState } from 'react';
 import Header from './compnents/Header';
 import Tasks from "./compnents/Tasks";
-// import Button from "./compnents/Button";
+
 
 function App() {
-  // const name = "Brad";
-  // const x = true;
+  const [tasks, setTasks] = useState(
+    [
+      {
+        id:1,
+        text: "Doctor's appointment",
+        day: " Feb 5th at 1:30pm",
+        reminder: true, 
+      } ,
+      {
+        id:2,
+        text: "Meeting at School",
+        day: " Feb 6th at 2:30pm",
+        reminder: true, 
+      }, 
+      {
+        id:3,
+        text: "Grocery Shopping",
+        day: " Feb 5th at 3:30pm",
+        reminder: false, 
+      }
+    ]      
+  )
+
+
 
   return ( 
     <div className = "container" >
 
       <Header />
-      <Tasks /> 
+      <Tasks tasks={tasks} /> 
       
 
     </div>
