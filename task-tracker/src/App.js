@@ -1,4 +1,5 @@
 import Header from './compnents/Header';
+import Tasks from "./compnents/Tasks";
 // import Button from "./compnents/Button";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div className = "container" >
 
       <Header />
-      
+      <Tasks /> 
       
 
     </div>

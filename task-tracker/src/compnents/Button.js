@@ -2,15 +2,13 @@
 import propTypes from 'prop-types'; 
 
 
-
-
-const Button = ({color, text, clickHandler}) => {
-    // const clickHandler = () => {
+const Button = ({color, text, onClick}) => {
+    // const onClick = () => {
     //     console.log("clicked in button.js");
     // }
 
     return (
-    <button onClick={clickHandler} style={{backgroundColor : color}} className="btn"> 
+    <button onClick={onClick} style={{backgroundColor : color}} className="btn"> 
             {text}         
         </button>
     )
