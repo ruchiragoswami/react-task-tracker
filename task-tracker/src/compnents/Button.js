@@ -1,12 +1,14 @@
 // import React from 'react'
 import propTypes from 'prop-types'; 
 
-const clickHandler = () => {
-    console.log("clicked");
-}
 
 
-const Button = ({color, text}) => {
+
+const Button = ({color, text, clickHandler}) => {
+    // const clickHandler = () => {
+    //     console.log("clicked in button.js");
+    // }
+
     return (
     <button onClick={clickHandler} style={{backgroundColor : color}} className="btn"> 
             {text}         
@@ -20,7 +22,8 @@ Button.defaultProps = {
 
 Button.propTypes = {
     text: propTypes.string,
-    color: propTypes.string
+    color: propTypes.string,
+    onClick : propTypes.func
 }
 
 export default Button
