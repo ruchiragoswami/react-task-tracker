@@ -38,9 +38,10 @@ function App() {
 
   // Toggle Reminder
   const toggleReminder = (id) => {    
+    console.log(id + ' clicked. Double click is working ')
     setTasks(
       tasks.map((task) => 
-        task.id === id ? {...task, reminder : task.reminder} : task))
+        task.id == id ? {...task, reminder : !task.reminder} : task))
 
   }
 
